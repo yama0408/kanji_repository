@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\GetController;
+use App\Http\Controllers\PlayController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('profile.index');
 });
 
 Route::get('/dashboard', function () {
@@ -27,5 +28,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/writing', [PlayController::class, 'writing']);
+Route::get('/reading1', [PlayController::class, 'reading1']);
+Route::get('/reading', [PlayController::class, 'reading']);
+Route::get('/how', [GetController::class, 'how']);
+Route::get('/login', [GetController::class, 'login']);
+Route::get('/score', [GetController::class, 'score']);
+Route::get('/readingquestion', [PlayController::class, 'readingquestion']);
 
 require __DIR__.'/auth.php';

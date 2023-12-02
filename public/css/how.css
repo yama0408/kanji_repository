@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+  background-image: url("../images/1538716.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.title {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 span{
+	border: solid 1px #454545;
+    margin: 1em auto;
+	padding:0.5em;/*内側余白*/
+	background-color:white;/*背景の色*/
+}
+

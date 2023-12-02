@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body {
+  background-image: url("../images/1538716.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.title {
+  font-size: 8em;
+  text-align: center;
+}
+
+.writing_button {
+  padding: 0;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  width: 10em;
+  height: 10em;
+  font-size: 2em;
+  background-color: skyblue;
+  color: white;
+}
+
+.reading_button {
+  padding: 0;
+  position: absolute;
+  right: 300px;
+  top: 300px;
+  width: 10em;
+  height: 10em;
+  font-size: 2em;
+  background-color: pink;
+  color: white;
+}
+
+.score_button {
+  padding: 0;
+  position: absolute;
+  right: 300px;
+  top: 650px;
+  width: 24em;
+  height: 2em;
+  font-size: 2em;
+  background-color: lightgreen;
+  color: white;
+  text-align: center;
+}
+
+.login_button {
+    padding: 0;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    font-size: 1.2em;
+    width: 5em;
+    height: 3em;
+    background-color: blue;
+    color: white;
+    
+}
+
+.how_button {
+    padding: 0;
+    position: absolute;
+    right: 250px;
+    top: 150px;
+    font-size: 1.2em;
+    width: 5em;
+    height: 3em;
+    background-color: red;
+    color: white;
+}

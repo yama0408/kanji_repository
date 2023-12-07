@@ -1,1 +1,1 @@
-import "./reading.js"
+import './bootstrap';

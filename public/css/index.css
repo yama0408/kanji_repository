@@ -13,6 +13,16 @@ body {
   text-align: center;
 }
 
+.level_button {
+  writing-mode: vertical-rl;
+  color: #000;
+  text-decoration: none;
+  font-size: 2em;
+  width: 3em;
+  height: 8em;
+  background-color: white;
+}
+
 .writing_button {
   padding: 0;
   position: absolute;
@@ -74,3 +84,5 @@ body {
     background-color: red;
     color: white;
 }
+    
+ 

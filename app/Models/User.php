@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    
+    public function problems(){
+    //生徒は多数の科目を履修。
+    return $this->belongsToMany(Ploblem::class);
+    }
 }

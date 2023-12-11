@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const ploblemsList = [];
     const answersList = [];
     let count = 0;
+    
     document.getElementById("reading1").addEventListener("click", async () => {
-
-        const two = 2;
-        const url = `https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/?grade=${two}`;
+        //const button = document.getElementById("reading1");
+        //button.style.display = "none"; // ボタンを非表示にする
+        const grade = 2;
+        const url = `https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/?grade=${grade}`;
         const options = {
             method: 'GET',
             headers: {
@@ -55,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const textArea = document.querySelector('.textarea');
         textArea.innerHTML = `<p>${ploblemsList[0]}</p>`;
-
     });
     
     
@@ -96,23 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("不正解です"); 
                     result.innerHTML = `<p>不正解です</p>`;
                 }
-                
-                
                 count++;
                 console.log(count);
                 console.log(ploblemsList[count]);
                 const textArea = document.querySelector('.textarea');
                 textArea.innerHTML = `<p>あなたのスコアは～です</p>`;
-            
-                
-                
             }
-            
-            
-            
         }
     });
-        
-  
 });
 

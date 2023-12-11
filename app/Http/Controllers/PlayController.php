@@ -12,9 +12,9 @@ class PlayController extends Controller
         
     }
     
-    public function reading1()
+    public function reading1(int $grade)
     {
-        return view('profile.reading1');
+        return view('profile.reading1')->with(['grade'=>$grade]);
         
     }
     

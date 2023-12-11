@@ -30,10 +30,11 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/writing', [PlayController::class, 'writing']);
-Route::get('/reading1', [PlayController::class, 'reading1']);
+Route::get('/reading/{grade}', [PlayController::class, 'reading1']);
 Route::get('/reading', [PlayController::class, 'reading']);
 Route::get('/how', [GetController::class, 'how']);
-Route::get('/login', [GetController::class, 'login']);
+Route::get('/signin', [GetController::class, 'signin']);
+Route::get('/signup', [GetController::class, 'signup']);
 Route::get('/score', [GetController::class, 'score']);
 Route::get('/readingquestion', [PlayController::class, 'readingquestion']);
 

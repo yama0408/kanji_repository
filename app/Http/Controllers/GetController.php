@@ -12,11 +12,7 @@ class GetController extends Controller
         
     }
     
-    public function login()
-    {
-        return view('profile.welcome');
-        
-    }
+    
     
     public function score()
     {
